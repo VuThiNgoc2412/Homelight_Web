@@ -1,8 +1,7 @@
 import React from "react";
 // import Catg from "./Catg"
-import ShopCart from "./ShopCart";
+import ProductCart from "./ProductCart";
 import "./style.css";
-import { Link } from "react-router-dom"
 
 
 const categorys = [
@@ -121,7 +120,7 @@ const categorys = [
 const data = [
   {
     id: 7,
-    cover: "./images/shops/shops-1.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Mapple Earphones",
     price: "400",
     discount: "25",
@@ -129,7 +128,7 @@ const data = [
   },
   {
     id: 8,
-    cover: "./images/shops/shops-2.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Vivo android one",
     price: "120",
     discount: "10",
@@ -137,7 +136,7 @@ const data = [
   },
   {
     id: 9,
-    cover: "./images/shops/shops-2.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Vivo android one",
     price: "120",
     discount: "10",
@@ -145,7 +144,7 @@ const data = [
   },
   {
     id: 10,
-    cover: "./images/shops/shops-2.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Vivo android one",
     price: "120",
     discount: "10",
@@ -153,7 +152,7 @@ const data = [
   },
   {
     id: 11,
-    cover: "./images/shops/shops-3.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Sony Light",
     price: "20",
     discount: "50 ",
@@ -161,7 +160,7 @@ const data = [
   },
   {
     id: 12,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -169,7 +168,7 @@ const data = [
   },
   {
     id: 13,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -177,7 +176,7 @@ const data = [
   },
   {
     id: 14,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -185,7 +184,7 @@ const data = [
   },
   {
     id: 15,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -193,7 +192,7 @@ const data = [
   },
   {
     id: 16,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -201,7 +200,7 @@ const data = [
   },
   {
     id: 17,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -209,15 +208,15 @@ const data = [
   },
   {
     id: 18,
-    cover: "./images/shops/shops-4.png",
-    name: "Iphone",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
+    name: "bebjhf",
     price: "999",
     discount: "10 ",
     categoryname: "Đèn Mâm Ốp Trần",
   },
   {
     id: 18,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -225,7 +224,7 @@ const data = [
   },
   {
     id: 19,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -233,7 +232,7 @@ const data = [
   },
   {
     id: 20,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -241,7 +240,7 @@ const data = [
   },
   {
     id: 21,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -249,7 +248,7 @@ const data = [
   },
   {
     id: 22,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -257,7 +256,7 @@ const data = [
   },
   {
     id: 23,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -265,7 +264,7 @@ const data = [
   },
   {
     id: 24,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -273,7 +272,7 @@ const data = [
   },
   {
     id: 25,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -281,7 +280,7 @@ const data = [
   },
   {
     id: 26,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -289,7 +288,7 @@ const data = [
   },
   {
     id: 27,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -297,7 +296,7 @@ const data = [
   },
   {
     id: 28,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -305,7 +304,7 @@ const data = [
   },
   {
     id: 29,
-    cover: "./images/shops/shops-4.png",
+    cover: "https://homelight.vn/img/p/den-tha-hien-dai-lady116-p4541.jpg",
     name: "Iphone",
     price: "999",
     discount: "10 ",
@@ -313,46 +312,22 @@ const data = [
   },
 ];
 
-const Shop = ({ addToCart, shopItems }) => {
+const Product = ({ addToCart, shopItems }) => {
   return (
-    <section className="shop background">
-      <div className="container d_flex container_item">
+    <section className="shop background product_items">
+      <div className="container d_flex product product_container">
         {/* <Catg /> */}
-        <div className="contentWidth content__items">
+        <div className="content-items">
           {categorys.map((category) => {
             return (
               <>
-                <div className="heading d_flex">
-                  <div className="heading-left row  f_flex">
-                    <h2>{category.category}</h2>
-                  </div>
-
-                  <div className="category_child">
-                    {category.children.slice(0, 4).map((categorychild) => {
-                      return (
-                        <span key={categorychild.id}>
-                          {categorychild.category}
-                        </span>
-                      );
-                    })}
-                    {/* {category.children.forEach((categorychild) => {
-                      return <span>{categorychild.category}</span>;
-                    })} */}
-                  </div>
-                  <Link to="/catedetail">
-                    <div className="heading-right row ">
-                      <span className="heading-right_text">View all</span>
-                      <i className="fa-solid fa-caret-right"></i>
-                    </div>
-                  </Link>
-                </div>
                 <div className="product-content  grid1">
                   {data
                     .filter((shopItems) => {
                       return shopItems.categoryname.includes(category.category);
                     })
                     .map((shopItems) => (
-                      <ShopCart addToCart={addToCart} shopItems={shopItems} />
+                      <ProductCart addToCart={addToCart} shopItems={shopItems} />
                     ))}
                 </div>
               </>
@@ -364,4 +339,4 @@ const Shop = ({ addToCart, shopItems }) => {
   );
 };
 
-export default Shop;
+export default Product;

@@ -5,6 +5,7 @@ import CategoryItem from "./CategoryItem";
 const Categories = () => {
   const data = [
     {
+      id: 1,
       cateImg: "./images/category/cat1.png",
       cateName: "Đèn Chùm",
       children: [
@@ -13,7 +14,7 @@ const Categories = () => {
           cateName: "Đèn chùm hiện đại",
         },
         {
-          id: 2,
+          id: 3,
           cateName: "Đèn chùm ",
         },
         {
@@ -31,6 +32,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 2,
       cateImg: "./images/category/cat2.png",
       cateName: "Đèn Thả",
       children: [
@@ -41,6 +43,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 3,
       cateImg: "./images/category/cat3.png",
       cateName: "Đèn Mâm Ốp Trần",
       children: [
@@ -51,6 +54,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 4,
       cateImg: "./images/category/cat4.png",
       cateName: "Đèn Gương",
       children: [
@@ -61,6 +65,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 5,
       cateImg: "./images/category/cat5.png",
       cateName: "Đèn Bàn - Đèn Cây",
       children: [
@@ -71,6 +76,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 6,
       cateImg: "./images/category/cat6.png",
       cateName: "Đèn Tường",
       children: [
@@ -81,6 +87,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 7,
       cateImg: "./images/category/cat7.png",
       cateName: "Quạt Trần",
       children: [
@@ -91,6 +98,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 8,
       cateImg: "./images/category/cat8.png",
       cateName: "Đèn Led",
       children: [
@@ -101,6 +109,7 @@ const Categories = () => {
       ],
     },
     {
+      id: 9,
       cateImg: "./images/category/cat9.png",
       cateName: "Đèn Ngoài Trời",
       children: [

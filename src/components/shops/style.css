@@ -74,8 +74,9 @@
   width: 23%;
 }
 .heading-right {
-  width: 10%;
+  width: 145%;
   line-height: 47px;
+  cursor: pointer;
 }
 /* .category_child span{
 } */

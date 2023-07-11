@@ -1,22 +1,10 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import './Home.css'
+import './style.css'
 
 export default function CategoryItem({ item }) {
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsSubMenuOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsSubMenuOpen(false);
-  };
   if (item.children) {
     return (
       <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         className="category-item"
       >
         <Link to={`/catedetail/${item.id}`}>
@@ -25,7 +13,7 @@ export default function CategoryItem({ item }) {
           </div>
         </Link>
 
-        <div className={isSubMenuOpen ? "category-content" : "notcategory"}>
+        <div>
           {item.children.map((child) => (
             <Link to={`/catedetail/${child.id}`}><CategoryItem item={child} /></Link>
           ))}
