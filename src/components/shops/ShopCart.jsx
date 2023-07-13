@@ -45,6 +45,7 @@
 //export default ShopCart
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ShopCart = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0);
@@ -65,7 +66,10 @@ const ShopCart = ({ shopItems, addToCart }) => {
             </div>
           </div>
           <div className="product-details">
-            <h3>{shopItems.name}</h3>
+            <h3>
+              <Link  to={`/productdetail/${shopItems.id}`}>{shopItems.name}
+              </Link>
+            </h3>
             <div className="rate">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>

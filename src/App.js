@@ -8,6 +8,7 @@ import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
 import CateProdetail from "./components/CategoryItems/CateProdetail"
+import ProductDetail from "./components/ProductDetail/ProductDetail"
 function App() {
   /*
   step1 :  const { productItems } = Data 
@@ -81,7 +82,10 @@ function App() {
           <Route path='/catedetail/:id' exact>
             <CateProdetail productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
           </Route>
-          {/* <Route path='/catedetail/:id' component={Cate_Pro_detail} /> */}
+          {/* <Route path='/productdetail/:id' component={ProductDetail} /> */}
+          <Route path='/productdetail/:id' exact>
+            <ProductDetail CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
+          </Route>
         </Switch>
         <Footer />
       </Router>
