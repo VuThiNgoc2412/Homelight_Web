@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Header from "./common/header/Header"
@@ -9,6 +10,12 @@ import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
 import CateProdetail from "./components/CategoryItems/CateProdetail"
 import ProductDetail from "./components/ProductDetail/ProductDetail"
+import ProductAdmin from "./Admin/ProductAdmin/ProductAdmin";
+import EditProduct from "./Admin/ProductAdmin/EditProduct";
+import AddCategory from "./Admin/CategoryAdmin/AddCategory";
+import CategoryAdmin from "./Admin/CategoryAdmin/CategoryAdmin";
+import Customer from "./Admin/Customer/Customer";
+import CustomerDetail from "./Admin/Customer/CustomerDetail";
 function App() {
   /*
   step1 :  const { productItems } = Data 
@@ -86,6 +93,12 @@ function App() {
           <Route path='/productdetail/:id' exact>
             <ProductDetail CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
           </Route>
+          <Route path='/admin' component={ProductAdmin} />
+          <Route path='/editproduct' component={EditProduct} />
+          <Route path='/addcategory' component={AddCategory} />
+          <Route path='/categoryadmin' component={CategoryAdmin} />
+          <Route path='/customer' component={Customer} />
+          <Route path='/customerdetail/:id' component={CustomerDetail} />
         </Switch>
         <Footer />
       </Router>
